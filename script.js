@@ -35,8 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // Here you would typically send the form data to a server
-            // For this example, we'll just log it to the console
+
             const formData = new FormData(contactForm);
             console.log('Form submitted with the following data:');
             for (let [key, value] of formData.entries()) {
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Add animation to project cards
+    // Animation to project cards
     const projectCards = document.querySelectorAll('.project-card');
     projectCards.forEach(card => {
         card.addEventListener('mouseenter', () => {
